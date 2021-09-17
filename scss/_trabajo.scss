@@ -1,0 +1,86 @@
+body{
+    background-color: #fafafa;
+}
+
+//------------- header -------------------
+.contenedorVideoTrabajo video{
+    width: 100%;
+    position: absolute;
+    height: 400px;
+    object-fit: cover;
+}
+
+.logoTrabajo{
+    width: 250px;
+    padding: 5% 15%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.788);
+    border-radius: 5% 5%;
+    transition: 0.5s;
+}
+
+.logoTrabajo:hover{
+    width: 300px;
+}
+
+.contenedorMenuTrabajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    height: 400px;
+}
+
+//---------------- section ------------------
+.imgForm{
+    width: 500px;
+}
+
+.contenedorSectionTrabajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #5680bc;
+    border-radius: 5px 50px;
+    margin: 0 5% 0 5%;
+}
+
+//---------------- main -----------------------
+.marginTitulo{
+    margin: 10% 0 5% 0;
+}
+
+.contenedorTrabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Trabajo{
+    width: 250px;
+    height: 430px;
+    background-color: #5680bc;
+    border-radius: 5px 50px;
+}
+
+.tituloTrabajo{
+    color:black;
+    padding: 5%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+.subtituloTrabajo{
+    color: white;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.104);
+}
+
+.parrafoTrabajo{
+    color: white;
+    padding: 0 2%;
+    text-align: center;
+}
+

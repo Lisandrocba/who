@@ -1,0 +1,37 @@
+.titulocursos{
+    color:red;
+}
+
+.contenedorCursos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenedorCurso{
+    width: 300px;
+    height: 100px;
+    background-color: #5680bc;
+    border-radius: 10px;
+}
+
+.tituloCurso{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btnWhats{
+    width: 3%;
+    padding: 1%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    border-radius: 43%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.btnWhats:hover{
+    background-color: #a1f2ba;
+}
