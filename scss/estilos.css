@@ -107,6 +107,16 @@ body {
   border-radius: 0 50px 5px 0;
 }
 
+.imgMenu {
+  width: 3%;
+  position: relative;
+  display: none;
+}
+
+#btn-menu {
+  display: none;
+}
+
 .contenedorQuienesSomos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,6 +335,48 @@ body {
 }
 
 @media (max-width: 850px) {
+  .imgMenu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 2%;
+  }
+  .conteMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -70%;
+  }
+  .menu a {
+    background-color: #5680bc;
+    margin: 0;
+    padding: 6% 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .fondoMenu {
+    background-color: #5680bc;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+  .estiloMenu1 {
+    border-radius: 0;
+  }
+  .estiloMenu2 {
+    border-radius: 0;
+  }
+  .contenedorImgMenu {
+    background-color: white;
+  }
   .menu a {
     width: 200px;
     font-size: 1.3rem;
