@@ -274,14 +274,20 @@
     }
 
     .menu a{
-        background-color: #5680bc;
+        background-color: #5680bc88;
         margin: 0;
         padding: 6% 0;
         transition: 0.5s;
     }
+
+    .menu a:hover{
+        padding: 6% 0;
+        margin: 0;
+        background-color: #5680bc;
+    }
     
     .fondoMenu{
-        background-color: #5680bc;
+        background-color: #5680bc88;
     }
 
     #btn-menu:checked ~ .menu{
@@ -369,9 +375,76 @@
         }
     }
 
-    @media (max-width: 650px){
+    @media (max-width: 500px){
     
-    
-    
-    }    
+    .imgMenu{
+        width: 5%;
+    }  
 
+    .logo{
+        width: 130px;
+        margin-top: 50%;
+    }
+
+    .contenedorMenu{
+        height: 300px;
+    }
+
+    .contenedorVideo video{
+        height: 300px;
+    }
+
+    .titulo{
+        font-size: 1.3rem;
+    }
+
+    .parrafoQuienesSomos{
+        font-size: 0.8rem;
+    }
+
+    .parrafoQuienesSomosMedio{
+        font-size: 1rem;
+    }
+
+    .imgMain{
+        display: none;
+    }
+
+    .imgMain2{
+        display: none;
+    }
+
+    .parrafo1{
+        border: 2px solid #5680bc;
+        border-radius: 5px 50px;
+    }
+
+    .parrafoContenedor2{
+        border: 2px solid #5680bc;
+        border-radius: 50px 5px; 
+    }
+
+    .contenedorAvatares{
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .imgAvatar{
+        width: 100px;
+        margin-top: 30%;
+    }
+
+    .pad2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pad3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+} 
