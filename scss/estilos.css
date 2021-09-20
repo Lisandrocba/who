@@ -291,19 +291,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5%;
-  height: 100px;
+  height: 170px;
   border-top: 2px solid black;
 }
 
 .contenedorTituloFooter {
-  width: 500px;
+  width: 400px;
+  text-align: center;
 }
 
 .contenedorRedes {
@@ -314,15 +314,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 40%;
+  width: 20%;
 }
 
 .imgRedes {
   width: 15%;
+  margin: 0 10%;
 }
 
 .tituloFooter {
-  padding: 0 0 0 30%;
+  font-size: 1.8rem;
+}
+
+.contenedorPieDePagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .8rem;
+  width: 150px;
+}
+
+.contenedorPieDePagina a {
+  text-decoration: none;
+  color: black;
+  padding: 5% 0;
 }
 
 @media (max-width: 1000px) {
@@ -511,6 +530,15 @@ body {
     border-top: 4px solid white;
     border-bottom: 4px solid white;
   }
+  .contenedorTituloFooter {
+    display: none;
+  }
+  .contenedorRedes {
+    margin-right: 6%;
+  }
+  .contenedorPieDePagina {
+    width: 40%;
+  }
 }
 
 body {
@@ -626,6 +654,37 @@ body {
   color: red;
 }
 
+.contenedorLogoCusos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+.logoTrabajoCursos {
+  position: relative;
+  width: 200px;
+  padding: 5% 15%;
+  margin: 25% 0;
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 5% 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.logoTrabajoCursos:hover {
+  width: 230px;
+  margin: 13% 0;
+}
+
 .contenedorCursos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,14 +699,30 @@ body {
 
 .contenedorCurso {
   width: 300px;
-  height: 100px;
-  background-color: #5680bc;
+  height: 150px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.719)), to(rgba(255, 255, 255, 0.446))), url(../multimedia/happy-young-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.719), rgba(255, 255, 255, 0.446)), url(../multimedia/happy-young-asia-businessmen-and-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 10px;
 }
 
 .tituloCurso {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.aclaracionCurso {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.descripcionCurso {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2%;
 }
 
 .btnWhats {
