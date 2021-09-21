@@ -84,3 +84,77 @@ body{
     text-align: center;
 }
 
+// ---------------------- media cueri ------------------------------
+@media (max-width: 1000px){
+    .contenedorForm{
+        padding: 5% 0 5% 5%
+    }
+
+    .imgForm{
+        width: 400px;
+    }
+
+   .contenedorTrabajos div{
+       margin-bottom: 5%;
+   }
+
+    .contenedorTrabajos{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 850px){
+    .imgForm{
+        display: none;
+    }
+
+    .contenedorForm{
+        width: 600px;
+        padding: 2% 5%;
+    }
+
+    .imgRedes{
+        width: 20%;
+    }
+
+    .contenedorRedes{
+        margin-right: 4%;
+    }
+
+    .tituloFooter{
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .tituloFooter{
+        display: none;
+    }
+
+    .contenedorPieDePagina{
+        width: 300px;
+        padding: 5% 10%;
+    }
+
+    .imgRedes{
+        width: 35%;
+    }
+
+    .contenedorRedes{
+        margin-right: 17%;
+    }
+}
+
+@media (max-width: 600px){
+    .btnTrabajo{
+        margin-left: 40%;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .parrafoTrabajo{
+        font-size: 0.9rem;
+    }
+}

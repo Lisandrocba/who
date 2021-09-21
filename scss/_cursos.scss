@@ -14,7 +14,7 @@
     position: relative;
     width: 200px;
     padding: 5% 15%;
-    margin: 25% 0;
+    margin: 25% 0 25% -13%;
     background-color: rgba(255, 255, 255, 0.788);
     border-radius: 5% 5%;
     transition: 0.5s; 
@@ -22,13 +22,15 @@
 
 .logoTrabajoCursos:hover{
     width: 230px;
-    margin: 13% 0;
+    margin-top: 5%;
+    margin-bottom: 20%;
 }
 
 .contenedorCursos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contenedorCurso{
@@ -38,6 +40,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin: 0 2% 5% 2%;
 }
 
 .tituloCurso{
@@ -58,18 +61,46 @@
     margin-top: 2%;
 }
 
-.btnWhats{
-    width: 3%;
-    padding: 1%;
+.imgRedesf{
+    font-size: 50px;
+    color: white;
+    padding: 1% 1.3%;
     position: fixed;
     bottom: 30px;
     right: 30px;
     background-color: #0df053;
-    border-radius: 43%;
+    border-radius: 50%;
     text-align: center;
     transition: 0.5s;
 }
 
-.btnWhats:hover{
-    background-color: #a1f2ba;
+.imgRedesf:hover{
+    background-color: white;
+    color: #0df053;
+}
+
+.contenedorRedesCursos{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+@media (max-width: 700px){
+    .imgRedesf{
+        padding: 2% 2.4%;
+    }
+
+    .imgRedes{
+        width: 30px;
+    }
+
+    .contenedorRedesCursos{
+        margin-right: 25%;
+    }
+}
+
+@media (max-width: 700px){
+    .contenedorRedesCursos{
+        margin-right: 30%;
+    }   
 }

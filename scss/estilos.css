@@ -650,6 +650,69 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .contenedorForm {
+    padding: 5% 0 5% 5%;
+  }
+  .imgForm {
+    width: 400px;
+  }
+  .contenedorTrabajos div {
+    margin-bottom: 5%;
+  }
+  .contenedorTrabajos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .imgForm {
+    display: none;
+  }
+  .contenedorForm {
+    width: 600px;
+    padding: 2% 5%;
+  }
+  .imgRedes {
+    width: 20%;
+  }
+  .contenedorRedes {
+    margin-right: 4%;
+  }
+  .tituloFooter {
+    padding: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .tituloFooter {
+    display: none;
+  }
+  .contenedorPieDePagina {
+    width: 300px;
+    padding: 5% 10%;
+  }
+  .imgRedes {
+    width: 35%;
+  }
+  .contenedorRedes {
+    margin-right: 17%;
+  }
+}
+
+@media (max-width: 600px) {
+  .btnTrabajo {
+    margin-left: 40%;
+  }
+  .titulo {
+    font-size: 1.5rem;
+  }
+  .parrafoTrabajo {
+    font-size: 0.9rem;
+  }
+}
+
 .titulocursos {
   color: red;
 }
@@ -673,7 +736,7 @@ body {
   position: relative;
   width: 200px;
   padding: 5% 15%;
-  margin: 25% 0;
+  margin: 25% 0 25% -13%;
   background-color: rgba(255, 255, 255, 0.788);
   border-radius: 5% 5%;
   -webkit-transition: 0.5s;
@@ -682,7 +745,8 @@ body {
 
 .logoTrabajoCursos:hover {
   width: 230px;
-  margin: 13% 0;
+  margin-top: 5%;
+  margin-bottom: 20%;
 }
 
 .contenedorCursos {
@@ -695,6 +759,8 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contenedorCurso {
@@ -705,6 +771,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
+  margin: 0 2% 5% 2%;
 }
 
 .tituloCurso {
@@ -725,20 +792,140 @@ body {
   margin-top: 2%;
 }
 
-.btnWhats {
-  width: 3%;
-  padding: 1%;
+.imgRedesf {
+  font-size: 50px;
+  color: white;
+  padding: 1% 1.3%;
   position: fixed;
   bottom: 30px;
   right: 30px;
   background-color: #0df053;
-  border-radius: 43%;
+  border-radius: 50%;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.btnWhats:hover {
-  background-color: #a1f2ba;
+.imgRedesf:hover {
+  background-color: white;
+  color: #0df053;
+}
+
+.contenedorRedesCursos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 20%;
+}
+
+@media (max-width: 700px) {
+  .imgRedesf {
+    padding: 2% 2.4%;
+  }
+  .imgRedes {
+    width: 30px;
+  }
+  .contenedorRedesCursos {
+    margin-right: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contenedorRedesCursos {
+    margin-right: 30%;
+  }
+}
+
+.bodyEmpresas {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.344)), to(rgba(255, 255, 255, 0.549))), url(../multimedia/pexels-fauxels-3183183.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.344), rgba(255, 255, 255, 0.549)), url(../multimedia/pexels-fauxels-3183183.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenedorHeaderEmpresa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5%;
+}
+
+.contenedorImgEmpresas {
+  text-align: center;
+}
+
+.imgLogoEmpresa {
+  width: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.imgLogoEmpresa:hover {
+  width: 53%;
+}
+
+.contenedorFormularioEmepresas {
+  width: 1900px;
+  padding: 5% 5%;
+  margin-top: 5%;
+}
+
+.contenedorSectionEmpresas {
+  background-color: white;
+  margin-top: 5%;
+  -webkit-box-shadow: 0px 0px 39px -4px black;
+  box-shadow: 0px 0px 39px -4px black;
+}
+
+.contenedorTextoEmpresa {
+  padding: 5%;
+}
+
+.tituloEmpresas {
+  font-size: 3rem;
+  color: #5680bc;
+}
+
+.parrafoEmpresas {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .contenedorHeaderEmpresa {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgLogoEmpresa {
+    width: 30%;
+  }
+  .contenedorFormularioEmepresas {
+    width: 80%;
+    padding: 0 5%;
+    margin-top: 3%;
+  }
+  .tituloEmpresas {
+    font-size: 1.8rem;
+  }
+  .parrafoEmpresas {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tituloEmpresas {
+    font-size: 1.5rem;
+  }
+  .parrafoEmpresas {
+    font-size: 1.0rem;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
