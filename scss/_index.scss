@@ -238,8 +238,33 @@
 }
 
 .imgRedes{
-    width: 15%;
-    margin: 0 10%;
+    font-size: 40px;
+    color: black;
+    margin: 0 20px;
+}
+
+.icoWhasapp{
+    transition: 0.5s;
+}
+
+.icoWhasapp:hover{ 
+	color: #6dc541;
+}
+
+.icoLinkedin{
+    transition: 0.5s;
+}
+
+.icoLinkedin:hover{ 
+	color: #0032b1;
+}
+
+.icoInstagram{
+    transition: 0.5s;
+}
+
+.icoInstagram:hover{ 
+	color: #fc3e31;
 }
 
 .tituloFooter{
@@ -258,6 +283,14 @@
     text-decoration: none;
     color: black;
     padding: 5% 0;
+}
+
+.contenedorPieDePagina a{
+    transition: 0.5s;
+}
+
+.contenedorPieDePagina a:hover{
+    transform: scale(1.1);
 }
 
 //-------------------------- media cueri -----------------------------
@@ -353,7 +386,11 @@
     }
 
     .imgRedes{
-        width: 35%;
+        width: 60%;
+    }
+
+    .contenedorRedes{
+        width: 20%;
     }
 
     .tituloFooter{
@@ -388,7 +425,13 @@
         }
 
         .imgRedes{
-            width: 30%;
+            width: 60%;
+            margin: 0 10%;
+        }
+
+        .contenedorRedes{
+            width: 50%;
+            margin-right: 3%;
         }
     }
 
@@ -447,8 +490,8 @@
     }
 
     .imgAvatar{
-        width: 100px;
-        margin-top: 30%;
+        width: 40px;
+        margin: 0 30%;
     }
 
     .pad2{
@@ -475,5 +518,9 @@
 
     .contenedorPieDePagina{
         width: 40%;
+    }
+
+    .imgRedes{
+        width: 60%;
     }
 }

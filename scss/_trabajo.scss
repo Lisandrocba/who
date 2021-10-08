@@ -110,13 +110,39 @@ body{
 }
 
 .ventana{
-    width: 60%;
-    height: 50%;
+    width: 70%;
+    height: 80%;
+    margin: 0;
     background-color: white;
     overflow: hidden;
+    overflow-y: scroll;
     position: relative;
     transition: 1s;
     transform: translateY(0);
+    background-color: #5680bc;
+}
+
+.parrafoVentana{
+    padding: 2% 5%;
+}
+
+.contenedorFormVentana{
+    background-color: rgba(38, 38, 38, 0.138);
+    padding: 2% 5%;
+}
+
+.tituloVentana{
+    text-align: center;
+    margin: 0;
+    padding: 3% 0;
+    background-color: rgba(255, 255, 255, 0.275);
+}
+
+.subtituloVentana{
+    text-align: center;
+    color: white;
+    padding: 5% 0;
+    background-color: rgba(255, 255, 255, 0.104);
 }
 
 .ventanaCerrar{
@@ -165,20 +191,9 @@ body{
         padding: 2% 5%;
     }
 
-    .imgRedes{
-        width: 20%;
-    }
-
-    .contenedorRedes{
-        margin-right: 4%;
-    }
-
-    .tituloFooter{
-        padding: 0;
-    }
 }
 
-@media (max-width: 700px){
+@media (max-width: 650px){
     .tituloFooter{
         display: none;
     }
@@ -186,14 +201,6 @@ body{
     .contenedorPieDePagina{
         width: 300px;
         padding: 5% 10%;
-    }
-
-    .imgRedes{
-        width: 35%;
-    }
-
-    .contenedorRedes{
-        margin-right: 17%;
     }
 }
 

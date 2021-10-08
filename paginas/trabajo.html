@@ -26,26 +26,12 @@
 
     <section class="contenedorSectionTrabajo">
         <div class="contenedorForm">
-            <form action="envias.php" method="post">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido:</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre Apellido" required>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Mail:</label>
-                    <input type="email" class="form-control" id="mail" name="mail" placeholder="nombre@ejemplo.com" required>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Linkedin:</label>
-                    <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="linkedin.com/ejemplo">
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Adjuntar CV:</label>
-                    <input class="form-control" type="file" id="cv" name="cv" required>
-                  </div>
-                  <input type="submit" class="btn btn-outline-primary btnTrabajo"></input>
-            </form>
-            
+            <form method="post">
+             <input type="text" placeholder="nombre" name="nombre" required>
+             <input type="mail" placeholder="mail" name="mail" required>
+             <input type="text" placeholder="linkedin" name="linkedin">
+             <input type="submit" name="enviar">
+            </form>    
         </div>
         <div>
             <img class="imgForm" src="../multimedia/img5.png" alt="">
@@ -66,6 +52,46 @@
         <div class="contenedorVentana">
             <div class="ventana ventanaCerrar">
                 <p class="cerrar">X</p>
+                <h3 class="tituloVentana">.Net</h3>
+                <p class="subtituloVentana">Desarrollador Jr</p>
+                <p class="parrafoVentana">Buscamos :<br>
+
+                    - Estudiantes avanzando o graduados de Ing. en Sistemas, Informática o afines (excluyente)<br/>
+                    -Con una experiencia mínima de tres años en desarrollo de software utilizando lenguaje orientado a eventos/objetos (excluyente)<br/>
+                    - Que hayas desarrollado sobre base de datos SQL Server (excluyente)<br/>
+                    - Experiencia en Reporting Services<br/><br>
+                    
+                    Las tareas que vas a realizar son:<br/>
+                    
+                    - Brindar asistencia y/o soporte de software y resolución de problemas mediante la interacción con el equipo de implementacion<br/>
+                    
+                    - Colaborar con analistas y arquitectos de software en los diseños del software.<br/>
+                    
+                    - Transformar diseños y especificaciones de software en código .
+                    <br/>
+                    - Colaborar con los analistas funcionales para crear la documentación para la asistencia al usuario<br/>
+                    
+                    
+                    Ofrecemos excelentes condiciones de contratación en relación directa con la compañía y medicina prepaga de primer nivel.<br/></p>
+                <form class="contenedorFormVentana">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Telefono:</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Adjuntar CV:</label>
+                        <input class="form-control" type="file" id="formFile">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Comentario:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <button type="button" class="btn btn-primary">ENVIAR</button>
+                </form>    
             </div>
         </div>
         <a href="" class="Trabajo">
@@ -90,9 +116,9 @@
 
     <footer class="contenedorPie">
         <div class="contenedorPieDePagina">
-            <a href="paginas/trabajo.html">Buscar Trabajo</a>
-            <a href="">Empresas</a>
-            <a href="paginas/cursos.html">Cursos</a>
+            <a href="../index.html">Inicio</a>
+            <a href="empresa.html">Empresas</a>
+            <a href="cursos.html">Cursos</a>
         </div>
         <div class="contenedorTituloFooter">
             <h3 class="tituloFooter">
@@ -100,12 +126,24 @@
             </h3>
         </div>
         <div class="contenedorRedes">
-                <img class="imgRedes" src="../multimedia/whatsapp.png" alt="">
-                <img class="imgRedes" src="../multimedia/linkedin.png" alt="">
-                <img class="imgRedes" src="../multimedia/logotipo-de-instagram.png" alt="">  
+            <a href="https://www.instagram.com/whoconsultoraintegral/">
+                <i class="fab fa-instagram imgRedes icoInstagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/who-consultora-integral/mycompany/">
+                <i class="fab fa-linkedin-in imgRedes icoLinkedin"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=3517529332">
+                <i class="fab fa-whatsapp imgRedes icoWhasapp"></i>
+            </a>      
         </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/790077c218.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="../js/ventanaModal.js"></script>
+  
+
 </body>
 </html>
