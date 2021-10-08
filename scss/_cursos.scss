@@ -21,9 +21,7 @@
 }
 
 .logoTrabajoCursos:hover{
-    width: 230px;
-    margin-top: 5%;
-    margin-bottom: 20%;
+   transform: scale(1.2);
 }
 
 .contenedorCursos{
@@ -31,6 +29,9 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2%;
 }
 
 .contenedorCurso{
@@ -46,7 +47,21 @@
 .filaCursos{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 5%;
+    margin-bottom: 2%;
+    margin: 2%;
+}
+
+.filaCursos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 2%;
+    margin: 2%;
 }
 
 .fondoAzul{
@@ -104,8 +119,46 @@
     width: 20%;
 }
 
+.imgCurso{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 950px){
+    .contenedorContenido h2{
+        font-size: 1rem;
+    }
+
+    .contenedorContenido p{
+        font-size: 0.8rem;
+    }
+}
+
 @media (max-width: 700px){
     .contenedorRedesCursos{
         margin-right: 30%;
-    }   
+    } 
+    
+    .filaCursos{
+        flex-direction: column;
+    }
+
+    .filaCursos2{
+        flex-direction: column-reverse;
+    }
+
+    .contenedorCurso{
+        margin: 10% 0;
+    }
+
+    .imgRedesf{
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .contenedorContenido{
+        margin: 3% 2%;
+    }
+
+  
 }
