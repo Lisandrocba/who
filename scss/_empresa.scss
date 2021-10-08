@@ -1,7 +1,6 @@
 .bodyEmpresas{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.344), rgba(255, 255, 255, 0.549)) , url(../multimedia/pexels-fauxels-3183183.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.344), rgba(255, 255, 255, 0.549)) , url(../multimedia/fondoEmpresa.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -17,7 +16,6 @@
 
 .imgLogoEmpresa{
     width: 50%;
-    //padding: 0 5%;
     transition: .5s;
 }
 
